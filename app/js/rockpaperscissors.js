@@ -75,7 +75,7 @@ function playToFive() {
         getWinner();
         if (getWinner != "tie") {
         } else if (getWinner = "player") { 
-            playerWins + 1;
+            playerWins += 1;
         } else if (getWinner = "computer") { 
             computerWins += 1;
         }
