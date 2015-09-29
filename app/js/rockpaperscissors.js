@@ -69,18 +69,18 @@ function playToFive() {
     // For example,
     //  console.log('Player chose ' + playerMove + ' while Computer chose ' + computerMove);
     //  console.log('The score is currently ' + playerWins + ' to ' + computerWins + '\n');
-    for (var playCount = 1; ((playerWins < 5) || (computerWins < 5)); console.log('Scoreboard... Player: ' + playerWins + ' Computer: ' + computerWins + '\n'), playCount += 1) {
+    for (var playCount = 1; ((playerWins < 5) || (computerWins < 5));
+    console.log('Scoreboard... Player: ' + playerWins + ' Computer: ' + computerWins + '\n'), playCount += 1) {
         getPlayerMove();
         getComputerMove();
         getWinner();
         if (getWinner != "tie") {
-        } else if (getWinner = "player") { 
+        } else if (getWinner == "player") {
             playerWins += 1;
-        } else if (getWinner = "computer") { 
+        } else if (getWinner == "computer") {
             computerWins += 1;
         }
         console.log('Player chose ' + playerMove + '. Computer chose ' + computerMove + '. The' + winner + 'wins round' + playCount + '.' + '\n');
     }
     return [playerWins, computerWins, playCount];
 }
-
