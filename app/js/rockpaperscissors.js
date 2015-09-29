@@ -82,7 +82,7 @@ function playToFive() {
         } else if (winner == "computer") {
             computerWins += 1;
         }
-        console.log('Player chose ' + playerMove + '. Computer chose ' + computerMove + '. The' + winner + 'wins round' + playCount + '.' + '\n');
+        console.log('Player chose ' + playerMove + '. Computer chose ' + computerMove + '. The' + winner + ' wins round' + playCount + '.' + '\n');
     }
     return [playerWins, computerWins, playCount];
 }
