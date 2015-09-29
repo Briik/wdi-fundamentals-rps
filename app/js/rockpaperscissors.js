@@ -71,6 +71,7 @@ function playToFive() {
     //  console.log('The score is currently ' + playerWins + ' to ' + computerWins + '\n');
     for (var playCount = 1; ((playerWins < 5) || (computerWins < 5));
     console.log('Scoreboard... Player: ' + playerWins + ' Computer: ' + computerWins + '\n'), playCount += 1) {
+        //In repl.it this function has two issues: 1. Is an open loop?!? 2. does not import winner, playerMove, or computerMove
         getPlayerMove();
         getComputerMove();
         getWinner();
